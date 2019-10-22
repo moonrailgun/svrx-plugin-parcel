@@ -1,6 +1,6 @@
 {
   "name": "svrx-plugin-parcel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The svrx plugin for parcel",
   "main": "index.js",
   "keywords": [
@@ -40,5 +40,9 @@
   "lint-staged": {
     "*.js": "eslint --fix"
   },
+  "bugs": {
+    "url": "https://github.com/moonrailgun/svrx-plugin-parcel/issues"
+  },
+  "homepage": "https://github.com/moonrailgun/svrx-plugin-parcel",
   "license": "MIT"
 }
