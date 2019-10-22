@@ -1,0 +1,44 @@
+{
+  "name": "svrx-plugin-parcel",
+  "version": "1.0.0",
+  "description": "The svrx plugin for parcel",
+  "main": "index.js",
+  "keywords": [
+    "svrx",
+    "svrx-plugin",
+    "parcel"
+  ],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "svrx": "^1.0.0"
+  },
+  "author": "moonrailgun <moonrailgun@gmail.com>",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "koa-parcel-middleware": "^1.0.3",
+    "koa-static": "^5.0.0",
+    "parcel-bundler": "^1.0.0"
+  },
+  "devDependencies": {
+    "@svrx/eslint-config": "^1.0.0",
+    "eslint": "^6.2.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "license": "MIT"
+}
